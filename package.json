@@ -1,0 +1,16 @@
+{
+  "name": "open-data-breach",
+  "version": "1.0.0",
+  "description": "Protected data breach collection",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "zensoratech",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
