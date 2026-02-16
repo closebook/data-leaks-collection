@@ -29,35 +29,33 @@
 <body>
     <div class="container">
         <div class="header">
-            <div id="top" class="logo"><a href="/data-leaks.html">
-                <svg width="200" height="60" viewBox="0 0 200 60"
-                        fill="0">
-                        <g id="logo-text" transform="translate(0.000000,60) scale(0.100000,-0.100000)" stroke="none">
-                            <path
-                                d="M1245 516c-9-14-22-54-28-90-10-62-12-65-41-68-26-2-31-7-31-28s5-25 30-25l30-1 6-134c3-74 7-136 8-138 0-2 16-2 34 0 36 3 34-13 22 169l-8 106 24 6c13 4 34 7 47 7 19 0 23 5 20 27-3 26-6 28-46 25l-43-4 6 39c4 21 16 51 27 67 15 21 18 33 11 45-17 26-50 25-68-3z">
-                            </path>
-                            <path d="M254 476c-11-28 4-48 33-44 22 2 28 8 28 28s-6 26-28 28c-18 2-29-2-33-12z"></path>
-                            <path
-                                d="M57 389c-16-4-35-16-43-26-25-33-16-60 32-1e2 25-21 59-50 76-64 38-32 33-59-11-59-33 0-44 11-45 49-1 34-40 42-56 11-18-34 4-85 45-105 67-31 155 8 155 69 0 43-20 68-91 116-32 23-59 45-59 50 0 15 33 12 58-6 30-21 66-15 70 13 5 35-75 67-131 52z">
-                            </path>
-                            <path
-                                d="M392 380c-42-10-55-22-50-46 4-20 12-21 84-9 25 5 44 3 48-3 3-6-17-38-46-72C299 99 307 65 472 66c70 0 91 3 107 19 27 24 26 31-5 52-25 16-27 16-39-1-10-13-25-16-71-14-32 2-59 8-61 15-2 6 23 40 55 75 87 93 98 122 62 158-21 21-66 25-128 10z">
-                            </path>
-                            <path d="M268 372c-20-4-22-30-11-156 6-76 7-77 32-74 32 4 35 17 26 134-7 93-12 104-47 96z">
-                            </path>
-                            <path
-                                d="M902 355c-59-27-72-47-48-74 9-10 16-22 15-27-6-32 5-60 35-90 28-28 42-34 75-34 54 0 97 22 121 63 51 82-12 187-112 187-18 0-57-11-86-25zm141-67c26-35 15-75-25-97-25-14-29-14-55 5-31 23-44 84-22 110 20 24 78 14 102-18z">
-                            </path>
-                            <path
-                                d="M645 358c-41-22-115-106-109-122 3-9 10-16 15-16s15-13 24-30c32-61 116-77 195-37 46 22 63 53 39 68-8 5-26 0-45-12-37-23-106-25-124-4-15 18-7 22 69 28 41 3 59 10 73 27 25 31 23 47-11 81-32 31-87 39-126 17zm79-57c7-11-28-21-69-21-29 1-29 1-11 15 22 16 72 20 80 6z">
-                            </path>
-                        </g>
-                        <g transform="translate(0.000000,60) scale(0.100000,-0.100000)">
-                            <path id="cat" style="fill-opacity:1"
-                                d="M1782 528c-11-18-21-39-24-47-3-10-20-16-48-17-24-1-63-5-86-9-42-6-44-5-70 34-29 44-57 59-79 41-8-7-27-37-42-67-36-74-44-201-18-270 46-121 198-212 304-183 60 16 122 77 156 152 25 55 27 69 22 142-6 97-53 249-78 254-10 2-25-10-37-30zm68-266c0-26-29-62-50-62-54 0-68 39-22 64 38 21 72 20 72-2zm-252-18c12-8 22-21 22-28 0-18-54-39-78-32-24 8-55 52-47 66 10 16 78 12 103-6zm122-89c-7-8-18-15-25-15s-18 7-25 15c-11 13-7 15 25 15s36-2 25-15z">
-                            </path>
-                        </g>
-                    </svg></a></div>
+<div id="top" class="logo"><a href="/data-leaks.html">
+    <svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer hexagon -->
+        <polygon points="40,15 70,15 85,30 70,45 40,45 25,30" stroke="#2faf5f" stroke-width="2" fill="none"/>
+        
+        <!-- Inner eye -->
+        <circle cx="55" cy="30" r="8" stroke="#2faf5f" stroke-width="2" fill="none"/>
+        <circle cx="55" cy="30" r="3" fill="#2faf5f">
+            <animate attributeName="r" values="3;4;3" dur="2s" repeatCount="indefinite" />
+        </circle>
+        
+        <!-- Scanning lines -->
+        <line x1="90" y1="20" x2="110" y2="20" stroke="#2faf5f" stroke-width="1"/>
+        <line x1="90" y1="30" x2="120" y2="30" stroke="#2faf5f" stroke-width="2"/>
+        <line x1="90" y1="40" x2="110" y2="40" stroke="#2faf5f" stroke-width="1"/>
+        
+        <!-- Data readout -->
+        <text x="130" y="25" font-family="'Share Tech Mono', monospace" font-size="10" fill="#2faf5f">0x7F</text>
+        <text x="130" y="42" font-family="'Share Tech Mono', monospace" font-size="10" fill="#2faf5f">0x3A</text>
+        
+        <!-- Scan animation -->
+        <line x1="125" y1="15" x2="125" y2="45" stroke="#ff5f5f" stroke-width="1" stroke-dasharray="2 4">
+            <animate attributeName="y1" values="15;45;15" dur="3s" repeatCount="indefinite" />
+            <animate attributeName="y2" values="45;15;45" dur="3s" repeatCount="indefinite" />
+        </line>
+    </svg>
+</a></div>
             
             </ul>
         </div>
